@@ -1,0 +1,49 @@
+### Discussion 2.1 Top-Down and Bottom-Up Decomposition
+For this discussion, post your ideas re: the question below:
+
+How would you solve the Tic-Tac-Toe problem using a Bottom-Up approach?
+Would your approach be easier than the Top-Down approach discussed in class?
+
+Answer: 
+1. Game is started
+
+2. Generate all possible board states
+
+3. For each board state:
+
+     IF a row is achieved:
+
+          assign WIN value
+
+     ELSE IF no squares are available:
+
+          assign DRAW value
+
+4. Begin loop:
+
+5. For each unfinished board state:
+
+          determine the current player
+
+          generate the next possible states
+
+6. Assign value to current state:
+
+     IF player is X:
+
+         choose MAX value from next states
+
+     ELSE:
+
+         choose MIN value from next states
+
+7. Repeat until all states are evaluated
+
+8. Display message 'Game Over'
+
+ 
+
+ 
+
+Would your approach be easier than the Top-Down approach discussed in class?
+No, bottom-up for tic-tac-toe is honestly feels more complicated than top-down approach, because I have to generate and evaluate every possible board first. Top-down is easier since it can just start from the empty board, try moves, and backtrack the results naturally. Bottom-up is more systematic and avoids repeated work, but its more abstract amd takes more effort to set up.
